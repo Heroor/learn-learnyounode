@@ -1,7 +1,8 @@
-const [,, dirPath, extension] = process.argv
+const path = require('path')
+const [,, dirPath, ext] = process.argv
 
 require('fs').readdir(dirPath, 'utf8', (err, fileNameList) => {
   fileNameList.forEach(fileName => {
-    fileName.endsWith(`.${extension}`) && console.log(fileName)
+    path.extname(fileName) === `.${ext}` && console.log(fileName)
   })
 })
