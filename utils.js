@@ -29,3 +29,16 @@ exports.concatStream = function(res) {
     )
   )
 }
+
+const paddingZero = num => ('0' + num).substr(-2)
+
+exports.getDate = function () {
+  const date = new Date
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  const day = date.getDate()
+  const hour = date.getHours()
+  const min = date.getMinutes()
+  return [year, paddingZero(month), paddingZero(day)].join('-') + ' ' + [hour, min].map(paddingZero).join(':')
+}
+
