@@ -12,5 +12,8 @@
   "dependencies": {
     "bl": "^4.0.2",
     "concat-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "async": "^3.2.0"
   }
 }
