@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "bl": "^4.0.2",
-    "concat-stream": "^2.0.0"
+    "concat-stream": "^2.0.0",
+    "through2-map": "^3.0.0"
   },
   "devDependencies": {
     "async": "^3.2.0"
